@@ -27,7 +27,15 @@ import reportWebVitals from 'reportWebVitals';
 // Initialize languages
 import './locales/i18n';
 
-// add css from template root
+// add css from template root;
+import './styles/animate.css';
+import './styles/bootstrap-icons.css';
+import './styles/bootstrap.css';
+import './styles/boxicons.css';
+import './styles/glightbox.css';
+import './styles/remixicon.css';
+import './styles/style.css';
+import './styles/swiper-bundle.css';
 
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
