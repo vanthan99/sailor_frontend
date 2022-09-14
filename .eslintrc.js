@@ -17,4 +17,5 @@ module.exports = {
       rules: { 'prettier/prettier': ['warn', prettierOptions] },
     },
   ],
+  ignorePatterns: ['src/styles/js'], // <<< ignore all files in folder
 };
