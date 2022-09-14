@@ -1,3 +1,4 @@
+import { Footer } from 'app/components/Footer/Loadable';
 import { Header } from 'app/components/Header/Loadable';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -11,6 +12,7 @@ export function HomePage() {
       </Helmet>
       <span>My HomePage</span>
       <Header />
+      <Footer />
     </>
   );
 }
