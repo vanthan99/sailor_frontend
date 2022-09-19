@@ -4,6 +4,7 @@
  *
  */
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 interface Props {}
 
@@ -77,7 +78,7 @@ export function Header(props: Props) {
                 <a href="blog.html">Blog</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
               <li>
                 <a href="index.html" className="getstarted">
