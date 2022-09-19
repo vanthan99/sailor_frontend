@@ -94,27 +94,31 @@
   /**
    * Hero carousel indicators
    */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
-
+  // console.log("abc");
+  // let heroCarouselIndicators = select("#hero-carousel-indicators")
+  // let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+  // console.log("abc2");
+  // console.log("test = ",document.querySelector('#heroCarousel'));
+  // console.log("heroCarouselItems = ",heroCarouselItems);
+  // heroCarouselItems.forEach((item, index) => {
+  //   (index === 0) ?
+  //   heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+  //     heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+  // });
+  // console.log("abc3");
   /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
+    console.log("abc = ",portfolioContainer);
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item'
       });
-
+      console.log("test");
       let portfolioFilters = select('#portfolio-flters li', true);
-
+      console.log('abc = ',portfolioContainer);
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
