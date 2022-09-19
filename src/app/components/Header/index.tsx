@@ -26,9 +26,10 @@ export function Header(props: Props) {
               </li>
               <li className="dropdown">
                 <a href="#">
-                  <span>About</span> <i className="bi bi-chevron-down" />
+                  <span>About</span>
+                  {/* <i className="bi bi-chevron-down" /> */}
                 </a>
-                <ul>
+                {/* <ul>
                   <li>
                     <a href="about.html">About</a>
                   </li>
@@ -61,10 +62,10 @@ export function Header(props: Props) {
                       </li>
                     </ul>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
-                <a href="services.html">Services</a>
+                <NavLink to="/service">Services</NavLink>
               </li>
               <li>
                 <NavLink to="/portolio">Portfolio</NavLink>

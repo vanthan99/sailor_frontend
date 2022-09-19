@@ -27,4 +27,10 @@ export const ImagesResource = {
   BLOG_BLOG2: require('./blog/blog-2.jpg'),
   BLOG_BLOG3: require('./blog/blog-3.jpg'),
   BLOG_BLOG4: require('./blog/blog-4.jpg'),
+
+  FEATURES_1: require('./features-1.png'),
+  FEATURES_2: require('./features-2.png'),
+  FEATURES_3: require('./features-3.png'),
+  FEATURES_4: require('./features-4.png'),
+  FEATURES_5: require('./features-5.png'),
 };
