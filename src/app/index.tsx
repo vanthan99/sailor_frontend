@@ -18,6 +18,7 @@ import { useTranslation } from 'react-i18next';
 import { ContactPage } from './pages/ContactPage/Loadable';
 import { BlogPage } from './pages/BlogPage/Loadable';
 import { PricingPage } from './pages/PricingPage/Loadable';
+import { PortolioPage } from './pages/PortolioPage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -36,6 +37,7 @@ export function App() {
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/pricing" component={PricingPage} />
+        <Route exact path="/portolio" component={PortolioPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

@@ -7,3 +7,9 @@ export interface BlogItemModel {
   redirectUrl?: string;
   image?: any;
 }
+
+export interface PortfolioItemModel {
+  image?: any;
+  title?: string;
+  description?: string;
+}
