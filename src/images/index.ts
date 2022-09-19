@@ -33,4 +33,9 @@ export const ImagesResource = {
   FEATURES_3: require('./features-3.png'),
   FEATURES_4: require('./features-4.png'),
   FEATURES_5: require('./features-5.png'),
+
+  TEAM_TEAM_1: require('./team/team-1.jpg'),
+  TEAM_TEAM_2: require('./team/team-2.jpg'),
+  TEAM_TEAM_3: require('./team/team-3.jpg'),
+  TEAM_TEAM_4: require('./team/team-4.jpg'),
 };

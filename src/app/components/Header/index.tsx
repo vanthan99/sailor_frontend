@@ -24,12 +24,15 @@ export function Header(props: Props) {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li className="dropdown">
-                <a href="#">
-                  <span>About</span>
-                  {/* <i className="bi bi-chevron-down" /> */}
-                </a>
-                {/* <ul>
+              <li>
+                <NavLink to="/about">About</NavLink>
+              </li>
+              {/* <li className="dropdown"> */}
+              {/* <a href="#"> */}
+              {/* <span>About</span> */}
+              {/* <i className="bi bi-chevron-down" /> */}
+              {/* </a> */}
+              {/* <ul>
                   <li>
                     <a href="about.html">About</a>
                   </li>
@@ -63,7 +66,7 @@ export function Header(props: Props) {
                     </ul>
                   </li>
                 </ul> */}
-              </li>
+              {/* </li> */}
               <li>
                 <NavLink to="/service">Services</NavLink>
               </li>

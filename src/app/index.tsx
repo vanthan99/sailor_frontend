@@ -20,6 +20,7 @@ import { BlogPage } from './pages/BlogPage/Loadable';
 import { PricingPage } from './pages/PricingPage/Loadable';
 import { PortolioPage } from './pages/PortolioPage/Loadable';
 import { ServicePage } from './pages/ServicePage/Loadable';
+import { AboutPage } from './pages/AboutPage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -40,6 +41,7 @@ export function App() {
         <Route exact path="/pricing" component={PricingPage} />
         <Route exact path="/portolio" component={PortolioPage} />
         <Route exact path="/service" component={ServicePage} />
+        <Route exact path="/about" component={AboutPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
