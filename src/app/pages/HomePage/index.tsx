@@ -12,11 +12,8 @@ export function HomePage() {
         <title>HomePage</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>My HomePage</span>
-      <Header />
       <Section />
       <HomeContent />
-      <Footer />
     </>
   );
 }

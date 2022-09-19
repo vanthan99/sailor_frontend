@@ -15,8 +15,6 @@ export function AboutPage(props: Props) {
   const { TEAM_TEAM_1, TEAM_TEAM_2, TEAM_TEAM_3, TEAM_TEAM_4 } = ImagesResource;
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       <div>
         {/* ======= About Section ======= */}
         <section id="about" className="about">
@@ -182,7 +180,6 @@ export function AboutPage(props: Props) {
         </section>
         {/* End Team Section */}
       </div>
-      <Footer />
     </>
   );
 }

@@ -64,8 +64,6 @@ export function BlogPage() {
   ));
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       {/* ======= Blog Section ======= */}
       <section id="blog" className="blog">
         <div className="container" data-aos="fade-up">
@@ -229,8 +227,6 @@ export function BlogPage() {
         </div>
       </section>
       {/* End Blog Section */}
-
-      <Footer />
     </>
   );
 }

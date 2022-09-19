@@ -111,14 +111,11 @@
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
-    console.log("abc = ",portfolioContainer);
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item'
       });
-      console.log("test");
       let portfolioFilters = select('#portfolio-flters li', true);
-      console.log('abc = ',portfolioContainer);
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {

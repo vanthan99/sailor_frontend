@@ -16,8 +16,6 @@ export function ServicePage(props: Props) {
     ImagesResource;
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       <div>
         {/* ======= Services Section ======= */}
         <section id="services" className="services">
@@ -263,8 +261,6 @@ export function ServicePage(props: Props) {
         </section>
         {/* End Features Section */}
       </div>
-
-      <Footer />
     </>
   );
 }

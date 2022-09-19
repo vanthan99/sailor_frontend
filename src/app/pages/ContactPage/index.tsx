@@ -15,8 +15,6 @@ interface Props {}
 export function ContactPage(props: Props) {
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       <section id="contact" className="contact">
         <div className="container">
           {<Location />}
@@ -24,8 +22,6 @@ export function ContactPage(props: Props) {
         </div>
       </section>
       {/* End Contact Section */}
-
-      <Footer />
     </>
   );
 }

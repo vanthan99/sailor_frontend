@@ -3,11 +3,22 @@
  * Footer
  *
  */
+import { SITE_MAP } from 'models';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
 export function Footer(props: Props) {
+  const {
+    ABOUT_PAGE,
+    BLOG_PAGE,
+    CONTACT_PAGE,
+    HOME_PAGE,
+    PORTOLIO_PAGE,
+    PRICING_PAGE,
+    SERVICE_PAGE,
+  } = SITE_MAP;
   return (
     <>
       <div>
@@ -52,19 +63,20 @@ export function Footer(props: Props) {
                   <h4>Useful Links</h4>
                   <ul>
                     <li>
-                      <i className="bx bx-chevron-right" /> <a href="#">Home</a>
+                      <i className="bx bx-chevron-right" />{' '}
+                      <Link to={HOME_PAGE.path}>Home</Link>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{' '}
-                      <a href="#">About us</a>
+                      <Link to={ABOUT_PAGE.path}>About us</Link>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{' '}
-                      <a href="#">Services</a>
+                      <Link to={SERVICE_PAGE.path}>Services</Link>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{' '}
-                      <a href="#">Terms of service</a>
+                      <Link to={SERVICE_PAGE.path}>Terms of service</Link>
                     </li>
                     <li>
                       <i className="bx bx-chevron-right" />{' '}

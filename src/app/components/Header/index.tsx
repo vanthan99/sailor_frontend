@@ -3,89 +3,54 @@
  * Header
  *
  */
+import { SITE_MAP } from 'models';
 import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 interface Props {}
 
 export function Header(props: Props) {
+  const {
+    ABOUT_PAGE,
+    BLOG_PAGE,
+    CONTACT_PAGE,
+    HOME_PAGE,
+    PORTOLIO_PAGE,
+    PRICING_PAGE,
+    SERVICE_PAGE,
+  } = SITE_MAP;
   return (
     <>
       {/* ======= Header ======= */}
       <header id="header" className="fixed-top d-flex align-items-center">
         <div className="container d-flex align-items-center">
           <h1 className="logo me-auto">
-            <a href="index.html">Sailor</a>
+            <Link to={HOME_PAGE.path}>Sailor</Link>
           </h1>
           {/* Uncomment below if you prefer to use an image logo */}
           {/* <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to={HOME_PAGE.path}>{HOME_PAGE.title}</Link>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
-              </li>
-              {/* <li className="dropdown"> */}
-              {/* <a href="#"> */}
-              {/* <span>About</span> */}
-              {/* <i className="bi bi-chevron-down" /> */}
-              {/* </a> */}
-              {/* <ul>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="team.html">Team</a>
-                  </li>
-                  <li>
-                    <a href="testimonials.html">Testimonials</a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="#">
-                      <span>Deep Drop Down</span>{' '}
-                      <i className="bi bi-chevron-right" />
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul> */}
-              {/* </li> */}
-              <li>
-                <NavLink to="/service">Services</NavLink>
+                <NavLink to={ABOUT_PAGE.path}>{ABOUT_PAGE.title}</NavLink>
               </li>
               <li>
-                <NavLink to="/portolio">Portfolio</NavLink>
+                <NavLink to={SERVICE_PAGE.path}>{SERVICE_PAGE.title}</NavLink>
               </li>
               <li>
-                <NavLink to="/pricing">Pricing</NavLink>
+                <NavLink to={PORTOLIO_PAGE.path}>{PORTOLIO_PAGE.title}</NavLink>
               </li>
               <li>
-                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to={PRICING_PAGE.path}>{PRICING_PAGE.title}</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to={BLOG_PAGE.path}>{BLOG_PAGE.title}</NavLink>
               </li>
               <li>
-                <a href="index.html" className="getstarted">
-                  Get Started
-                </a>
+                <NavLink to={CONTACT_PAGE.path}>{CONTACT_PAGE.title}</NavLink>
               </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" />

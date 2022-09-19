@@ -78,8 +78,6 @@ export function PortolioPage(props: Props) {
   ));
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       {/* ======= Portfolio Section ======= */}
       <section id="portfolio" className="portfolio">
         <div className="container">
@@ -344,8 +342,6 @@ export function PortolioPage(props: Props) {
         </div>
       </section>
       {/* End Portfolio Section */}
-
-      <Footer />
     </>
   );
 }

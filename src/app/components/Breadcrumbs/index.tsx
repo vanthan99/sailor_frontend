@@ -3,11 +3,14 @@
  * Breadcrumbs
  *
  */
+import { SITE_MAP } from 'models';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
 export function Breadcrumbs(props: Props) {
+  const { HOME_PAGE } = SITE_MAP;
   return (
     <>
       <section id="breadcrumbs" className="breadcrumbs">
@@ -16,7 +19,7 @@ export function Breadcrumbs(props: Props) {
             <h2>Contact</h2>
             <ol>
               <li>
-                <a href="index.html">Home</a>
+                <Link to={HOME_PAGE.path}>Home</Link>
               </li>
               <li>Contact</li>
             </ol>

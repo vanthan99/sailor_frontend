@@ -14,8 +14,6 @@ interface Props {}
 export function PricingPage(props: Props) {
   return (
     <>
-      <Header />
-      <Breadcrumbs />
       <div>
         {/* ======= Pricing Section ======= */}
         <section id="pricing" className="pricing">
@@ -108,7 +106,6 @@ export function PricingPage(props: Props) {
         {/* End Pricing Section */}
         <Faq />
       </div>
-      <Footer />
     </>
   );
 }
