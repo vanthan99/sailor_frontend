@@ -16,6 +16,7 @@ import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 import { ContactPage } from './pages/ContactPage/Loadable';
+import { BlogPage } from './pages/BlogPage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -32,6 +33,7 @@ export function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/contact" component={ContactPage} />
+        <Route exact path="/blog" component={BlogPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

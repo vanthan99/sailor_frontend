@@ -1,5 +1,3 @@
-import * as slide1 from './slide/slide-1.jpg';
-
 export const ImagesResource = {
   SLIDE_SLIDE1: require('./slide/slide-1.jpg'),
   SLIDE_SLIDE2: require('./slide/slide-2.jpg'),
@@ -24,4 +22,9 @@ export const ImagesResource = {
   PORTFOLIO_PORTFOLIO_DETAILS1: require('./portfolio/portfolio-details-1.jpg'),
   PORTFOLIO_PORTFOLIO_DETAILS2: require('./portfolio/portfolio-details-2.jpg'),
   PORTFOLIO_PORTFOLIO_DETAILS3: require('./portfolio/portfolio-details-3.jpg'),
+
+  BLOG_BLOG1: require('./blog/blog-1.jpg'),
+  BLOG_BLOG2: require('./blog/blog-2.jpg'),
+  BLOG_BLOG3: require('./blog/blog-3.jpg'),
+  BLOG_BLOG4: require('./blog/blog-4.jpg'),
 };

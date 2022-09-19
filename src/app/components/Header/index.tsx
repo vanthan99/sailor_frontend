@@ -75,7 +75,7 @@ export function Header(props: Props) {
                 <a href="pricing.html">Pricing</a>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <NavLink to="/blog">Blog</NavLink>
               </li>
               <li>
                 <NavLink to="/contact">Contact</NavLink>
