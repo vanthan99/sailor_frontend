@@ -5,12 +5,13 @@
  */
 import { PortfolioItemModel } from 'models';
 import * as React from 'react';
+import Fade from 'react-reveal/Fade';
 
 export const PortfolioItem = (portfolioItem: PortfolioItemModel) => {
   const { description, image, title } = portfolioItem;
   return (
-    <>
-      <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+    <Fade right cascade>
+      <div className="col-lg-4 col-md-6 portfolio-item">
         <div className="portfolio-wrap">
           <img src={image} className="img-fluid" alt="" />
           <div className="portfolio-info">
@@ -37,6 +38,6 @@ export const PortfolioItem = (portfolioItem: PortfolioItemModel) => {
           </div>
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
